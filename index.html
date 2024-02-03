@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musician's Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="grid">
+        <header>Header</header>
+        <nav>
+            <ul>
+                <li onclick="showSection('biography')">Biography</li>
+                <li onclick="showSection('photos')">Photos</li>
+                <li onclick="showSection('discography')">Discography</li>
+                <li onclick="showSection('links')">Links</li>
+                <li onclick="showSection('management')">Management</li>
+            </ul>
+        </nav>
+        <aside id="side-menu">
+            <div id="biography-submenu" class="submenu">
+                <ul>
+                    <li onclick="showContent('biography', 'mystory')">My story</li>
+                    <li onclick="showContent('biography', 'whoami')">Who am I</li>
+                </ul>
+            </div>
+            <div id="photos-submenu" class="submenu">
+                <ul>
+                    <li onclick="showContent('photos', 'concerts')">Concerts</li>
+                    <li onclick="showContent('photos', 'behindscenes')">Behind the scenes</li>
+                    <li onclick="showContent('photos', 'albumcovers')">Album covers</li>
+                </ul>
+            </div>
+            <div id="discography-submenu" class="submenu">
+                <ul>
+                    <li onclick="showContent1('discography', 'hive')">Hive</li>
+                    <li onclick="showContent1('discography', 'thrillseeker')">Thrill Seeker</li>
+                    <li onclick="showContent1('discography', 'singles')">Singles</li>
+                </ul>
+            </div>
+            <div id="links-submenu" class="submenu">
+                <ul>
+                    <li onclick="showContent('links', 'buymymerch')">Buy my merch</li>
+                    <li onclick="showContent('links', 'tour')">Tour</li>
+                </ul>
+            </div>
+            <div id="management-submenu" class="submenu">
+                <ul>
+                    <li onclick="showContent('management', 'login')">Log-in</li>
+                    <li onclick="showContent('management', 'logout')">Log-out</li>
+                </ul>
+            </div>
+        </aside>
+        <main id="main-content">
+            <div id="mystory-content" class="content-section">
+                <h2>My Story</h2>
+                <p>Maisonneuve was born on October 22, 1999, in Nyack, New York to a French Canadian father and a Taiwanese mother. While raised in the suburbs of Ridgewood, New Jersey, he began producing music at the age of 15.[3] He was trained in classical piano at the age of 6, but quit due to him being "sick of playing other people's compositions." In the fall of 2016, Maisonneuve dropped out of high school, adducing manic depression as the main cause for his leisure.[4] Afterwards, he started "isolating" himself to work on various demos and songs. The most popular track of his to debut from this period of self-isolation was "Cradles", which skyrocketed in popularity after being shared heavily on video-sharing application TikTok.[5]</p>
+            </div>
+        
+            <div id="whoami-content" class="content-section">
+                <h2>Who Am I</h2>
+                <p>Daniel Virgil Maisonneuve (born October 22, 1999), known professionally as Sub Urban, is an American singer, producer, and songwriter. He rose to prominence with his hit single "Cradles".[1][2]</p>
+            </div>
+            
+            <div id="concerts-content" class="content-section">
+                <h2>Concerts</h2>
+                <div class="photo-gallery">
+                    <img src="consert1.jpeg" alt="Concert Photo 1">
+                    <img src="consert2.png" alt="Concert Photo 2">
+                    <img src="consert3.webp" alt="Concert Photo 3">
+                    <img src="consert4.jpeg" alt="Concert Photo 4">
+                    <img src="consert5.jpeg" alt="Concert Photo 5">
+                    <img src="consert6.jpeg" alt="Concert Photo 6">
+                    <img src="consert7.jpeg" alt="Concert Photo 7">
+                    <img src="consert8.jpeg" alt="Concert Photo 8">
+                </div>
+            </div>
+            
+        
+            <div id="behindscenes-content" class="content-section">
+                <h2>Behind the Scenes</h2>
+                <div class="photo-gallery">
+                    <img src="behind.jpeg" alt="Photo 1">
+                    <img src="behind2.jpeg" alt="Photo 2">
+                    <img src="behind3.png" alt="Photo 3">
+                    <img src="behind4.webp" alt="Photo 4">
+                    <img src="behind5.jpeg" alt="Photo 5">
+                    <img src="behind6.webp" alt="Photo 6">
+                </div>
+            </div>
+
+            <div id="albumcovers-content" class="content-section">
+                <div class="photo-gallery">
+                    <img src="hive.jpeg" alt="Hive">
+                    <img src="thrillseeker.jpg" alt="Thrill Seeker">
+                    <img src="singles.webp" alt="Singles">
+                </div>
+            </div>
+        
+            <div id="hive-content" class="content-section">
+                <h2>Hive</h2>
+            </div>
+
+            <div id="thrillseeker-content" class="content-section">
+                <h2>Thrill seeker</h2>
+            </div>
+
+            <div id="singles-content" class="content-section">
+                <h2>Singles</h2>
+            </div>
+
+            <div id="buymymerch-content" class="content-section">
+                <h2>Buy my merch</h2>
+            </div>
+
+            <div id="tour-content" class="content-section">
+                <h2>Tour</h2>
+            </div>
+
+            <div id="login-content" class="content-section">
+                <h2>Log-in</h2>
+            </div>
+
+            <div id="logout-content" class="content-section">
+                <h2>Log-out</h2>
+            </div>
+        </main>
+        
+        <footer>Footer</footer>
+    </div>
+</body>
+</html>
